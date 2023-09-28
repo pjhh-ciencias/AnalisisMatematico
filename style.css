@@ -212,6 +212,7 @@ width: 100%;
   width: 100%;
 }
 
+
 .subtitle{
   font-size: 150%;
   /* font: italic monospace; */
@@ -313,6 +314,21 @@ h1.title{
   /* font-family: 'Pangolin', cursive; */
   /* font-family: 'Cabin Sketch', cursive; */
   font-family: 'Hina Mincho', serif;
+  /* font-family: 'Jacques Francois Shadow', cursive; */
+  margin-top: -2.5%;
+  margin-bottom: 0%;
+  content:" ";
+  color: rgb(0, 77, 179);
+}
+
+h2.title{
+  font-size: 160%;
+  font-weight: 600;
+  text-align: left;
+  font-family: "Muli";
+  /* font-family: 'Pangolin', cursive; */
+  /* font-family: 'Cabin Sketch', cursive; */
+  /* font-family: 'Hina Mincho', serif; */
   /* font-family: 'Jacques Francois Shadow', cursive; */
   margin-top: -2.5%;
   margin-bottom: 0%;
