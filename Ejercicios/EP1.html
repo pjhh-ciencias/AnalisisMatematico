@@ -133,7 +133,7 @@
     <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio </h1>
       <p>Sea $U$ un conjunto no vacio y sea $\mathcal{F}$ la colección de todos los subconjuntos 
         finitos de $U$. Considera la relación $\preceq$ sobre $\mathcal{F}$ definida para $A,B \in \mathcal{F}$
-        como: $A\preceq B$ si y sólo si $|A|\leq|B|$. Determina si $(\mathcal(F),\preceq)$ es un conjunto
+        como: $A\preceq B$ si y sólo si $|A|\leq|B|$. Determina si $(\mathcal{F},\preceq)$ es un conjunto
         parcialmente ordenado. Justifica tu respuesta.
       </p>
       
@@ -154,7 +154,7 @@
     <p>Sean $A$ y $B$ dos conjuntos no vacios y sea  $f\colon A \to B$ una función inyectiva
       es una inyección donde $(B,\preceq_{B})$ es un conjunto parcialmente ordenada.
       Definamos la relación $\preceq_{A}$ sobre $A$ como: $a_{1} \preceq_{A} a_{2}$ si y sólo si
-      $f(a_{1}) \preceq_{A} f(a_{2})$. Prueba que $(A,\preceq_{A})$ es un conjunto parcialmente ordenado.
+      $f(a_{1}) \preceq_{B} f(a_{2})$. Prueba que $(A,\preceq_{A})$ es un conjunto parcialmente ordenado.
     </p>
     </div>
 
@@ -190,6 +190,10 @@
         <p>
           Da un ejemplo distinto de los proporcionados en clase de un conjunto parcialmente ordenado
           que tenga un único elemento maximal y pero que este no sea un elemento máximo.
+        </p>
+        <p>
+          <b>Sugerencia:</b>  Considera en $A=(0,1]\cup [2,3)$ el orden $$\left \{ \begin{matrix} x\preceq_A y\Leftrightarrow x\leq y&amp; \mbox{ si }&amp;x,y\in (0,1] \\x\preceq_A y\Leftrightarrow x\leq y &amp; \mbox{ si }&amp;x,y\in [2,3),\end{matrix}\right.$$ 
+          en donde $\leq$ representa el orden usual. Entonces, $1$ es el único elemento maximal de $A,$ pero no es máximo
         </p>
       </div>
     <!-- <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio </h1>
