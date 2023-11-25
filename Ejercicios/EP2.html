@@ -103,9 +103,183 @@
 
 
     <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
+      <p> Prueba que \(d(x,y)=\left| \frac{1}{x}-\frac{1}{y} \right| \)
+        es una métrica en \((0,\infty)\).
+      </p>          
+        
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
+      <p>Sea \((X,d)\) un espacio métrico. Prueba que para todos \(x,y,z\in X\)
+        \[
+        |d(x,z)-d(y,z)|\leq d(x,y).
+        \]
+      </p>          
+        
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
+      <p>Sea \((X,d)\) un espacio métrico. Define una nueva
+        función \(\rho:X\times X \to \mathbb{R}\) dada por
+        \[
+        \rho(x,y)=\frac{d(x,y)}{1+d(x,y)}
+        \]
+        Prueba que \(\rho\) es una métrica.
+      </p>     
+      <p>
+        Sugerencia: considera la función \(\varphi:[0,\infty)\to [0,1)\)
+        dada por \(\varphi(t)=\frac{t}{1+t}\). Primera prueba que
+        \(\varphi\) es monótona creciente y que \(\varphi(s+t)\leq \varphi(s)+\varphi(t)\).
+      </p>     
+        
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
+      <p>
+        Por \(\{0,1\}^{\mathbb{N}}\) denotamos al conjunto de todas
+        las suceciones de 0's y 1's. Es decir \(a\in \{0,1\}^{\mathbb{N}}\)
+        si y sólo si \(a=(a_n)_{n=1}^{\infty}\), con \(a_n\in \{0,1\}\), para
+        toda \(n\).
+      </p>
+      <p>
+        En \(\{0,1\}^{\mathbb{N}}\) define
+        \[
+        d(a,b)=\sum_{n=1}^\infty \frac{1}{2^n}|a_n-b_n|
+        \]
+        Prueba que \(d\) es una métrica en \(\{0,1\}^{\mathbb{N}}\).
+      </p>  
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
+      <p>
+        Por \(C[a,b]\) denotamos al conjunto de funciones continuas en
+        el intervalo \([a,b]\). En \(C[a,b]\) define
+        \[
+        d_\infty(f,g)=\max_{t\in [a,b]}\{ |f(t)-g(t)| \},
+        \quad d_1(f,g)=\int_a^b |f(t)-g(t)|dt.
+        \]
+        Prueba que \(d_\infty\) y \(d_1\) son métricas en \(C[a,b]\).
+      </p>
+   
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
+      <p>
+        Supongamos que \((X,d_X)\), \((Y,d_Y)\) son dos espacios métrios.
+        Define
+        \begin{eqnarray*}
+        d((x_1,y_1),(x_2,y_2))&=& d_X(x_1,x_2)+d_Y(y_1,y_2),\\
+        \rho((x_1,y_1),(x_2,y_2)) &=& \max\{d_X(x_1,x_2), d_Y(y_1,y_2)  \}\\
+        \sigma((x_1,y_1),(x_2,y_2)) &=& \sqrt{d_X(x_1,x_2)^2+d_Y(y_1,y_2)^2}
+        \end{eqnarray*}
+        Prueba que \(d\), \(\rho\) y \(\sigma\) son métricas  en \(X\times Y\).
+      </p>
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-ejercicio" id="Ejer:MetricasGeneradasPorFunciones"> Ejercicio</h1>
+      <p>
+        Sea \(f:[0,\infty)\to [0,\infty)\) una función que satisface
+        <ul>
+          <li>
+            \(f\) es monótona creciente.
+          </li>
+          <li> \(f(0)=0\), </li>
+          <li> \(f(x)>0\) para \(x>0\),</li>
+          <li> \(f(x+y)\leq f(x)+f(y)\), para todos \(x,y\). </li>
+        </ul>
+
+      </p>
+
+      <p>
+        Sea \((X,d)\) un espacio métrico. Prueba que \(\rho(x,y):= f(d(x,y)) \)
+        es una métrica en \(X\).
+      </p>
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
+      <p>
+        Sea \((X,d)\) un espacio métrico. Define, \(\rho,\sigma:X\times X\to \mathbb{R}\)
+        por
+        \[
+        \rho(x,y)=\min\{d(x,y),1\}, \quad \sigma(x,y)=\sqrt{d(x,y)}
+        \]
+        Prueba que \(\rho\) y \(\sigma\) son métricas.
+      </p>
+      <p>
+        Sugerencia: utiliza el <a  href="#Ejer:MetricasGeneradasPorFunciones">Ejercicio anterior</a> .</p>
+      </p>
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
+      <ol>
+        <li>
+        Sea \(\rho:X\times X\to \mathbb{R}\) una función que satisface,
+        para todos \(x,y,z\in X\):
+        <ol>
+          <li> \(\rho(x,y) = 0\) si y sólo si \(x=y\), </li>
+          <li> \(\rho(x,y)=\rho(y,x)\), </li>
+          <li> \(\rho(x,y) \leq \rho(x,z)+\rho(z,y)\).</li>
+        </ol>
+        Prueba que \(\rho\) es una métrica en \(X\).
+        <p>
+
+        </p>
+      </li>
+
+        <li>
+          Da un ejemplo de un conjunto \(X\) y  función
+          \(\rho:X\times X\to \mathbb{R} \) tal que,
+          para todos \(x,y\in X\) satisface:
+          <ol>
+            <li>
+             \(d(x,y)=0\) si y sólo
+             si \(x=y\)
+           </li>
+           <li>
+             \(d(x,y)\leq d(x,z)+d(z,y)\)
+           </li>
+         </ol>
+          y sin embargo \(d\) no es una métrica.
+          <p>
+            Sugerencia: piensa en un conjunto \(X\) con
+            sólo dos puntos.
+          </p>
+        </li>
+        <p>
+
+        </p>
+        <li>
+        Sea \(\sigma:X\times X\to \mathbb{R}\) una función que satisface,
+        para todos \(x,y,z\in X\):
+        <ol>
+        <li> \(\sigma(x,y) = 0\) si y sólo si \(x=y\), </li>
+        <li> \(\sigma(x,y) \leq \sigma(x,z)+\sigma(y,z)\).</li>
+        </ol>
+        Prueba que \(\sigma\) es una métrica en \(X\).
+        </li>
+
+
+    </ol>
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
       <p>
       </p>          
         
     </div>
+
+    <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
+      <p>
+      </p>          
+        
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
+      <p>
+      </p>          
+        
+    </div>
+
+
 
 </body>
