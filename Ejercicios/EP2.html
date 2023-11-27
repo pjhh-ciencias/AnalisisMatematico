@@ -99,30 +99,69 @@
 
 
 
-  <body class="fondo-body" ><h1 class="page-title-ejercicios-propuestos"> Ejercicios propuestos segundo examen parcial </h1>   
+  <body class="fondo-body" ><h1 class="page-title-ejercicios-propuestos"> Ejercicios propuestos segundo examen parcial </h1>
 
+
+    <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
+      <p>Prueba que las siguientes funciones definen una métrica en $\mathbb{R}$.
+        <ol>
+          <li>$d(x,y) \colon = |x-y|$</li><br>
+          <li>$\sigma(x,y) \colon= \sqrt{|x-y|}$</li>
+        </ol>
+      </p>          
+      </div>
 
     <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
     <p> Prueba que \(d(x,y):=\left| \displaystyle{\frac{1}{x}-\frac{1}{y}} \right| \)
         es una métrica en \((0,\infty)\).
-      </p>          
-        
+    </p>          
     </div>
 
     <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
-      <p>Sea \((A,d)\) un espacio métrico. Prueba que para todos \(x,y,z\in A\)
+      <p> Prueba que \(d(x,y):=\left| \displaystyle{\frac{1}{x}-\frac{1}{y}} \right| \)
+          es una métrica en el conjunto de los números naturales $\mathbb{N}$.
+      </p>
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
+      <p>Prueba que la función $d\colon \mathbb{R}^2 \times \mathbb{R}^2 \to \mathbb{R}$  definida como:
+        $$d((x_{1},y_{1}), (x_{2},y_{2})) \colon = 
+        \begin{cases} 
+        |x_{1} - y_{1}|, \text{ si } x_{2}=y_{2}\\
+        \\
+        |x_{1}| + |x_{2} - y_{2}| + |y_{2}|, \text{ si } x_{2}\not = y_{2}
+        
+        \end{cases}$$
+        es una métrica en $\mathbb{R}^{2}$.
+      </p>
+
+    </div>
+
+
+  
+
+    <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
+      <p>Sea $(A,d)$ un espacio métrico. Prueba que para todos \(x,y,z\in A\)
         \[
-        |d(x,z)-d(y,z)|\leq d(x,y).
+        |d(x,z)-d(z,y)|\leq d(x,y).
         \]
       </p>          
-        
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-ejercicio" id="Ejer:MetricasGeneradasPorFunciones"> Ejercicio</h1>
+      <p>Sea $(A,d)$ un espacio métrico. Prueba que para cualesquiera $x,y,z,w \in A$, se satisface:
+        $$|d(x,y) - d(z,w)| \leq d(x,y) + d(z,w)$$ 
+      </p>
+      <p>En particular, 
+        $$|d(x,z) - d(z,y)| \leq d(x,y)$$
+      </p>
     </div>
 
     <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
       <p>Sea \((A,d)\) un espacio métrico. Define una nueva
         función \(\rho:A \times A \to \mathbb{R}\) dada por
         \[
-        \rho(x,y)=\frac{d(x,y)}{1+d(x,y)}
+        \rho(x,y) := \frac{d(x,y)}{1+d(x,y)}
         \]
         Prueba que \(\rho\) es una métrica en $A$.
       </p>     
@@ -133,30 +172,30 @@
         
     </div>
 
+
+
     <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
       <p>
-        Por \(\{0,1\}^{\mathbb{N}}\) denotamos al conjunto de todas
-        las suceciones de 0's y 1's. Es decir \(a\in \{0,1\}^{\mathbb{N}}\)
+        Se denota por \(\{0,1\}^{\mathbb{N}}\) al conjunto de todas
+        las sucesiones de $0$'s y $1$'s. Es decir \(a\in \{0,1\}^{\mathbb{N}}\)
         si y sólo si \(a=(a_n)_{n=1}^{\infty}\), con \(a_n\in \{0,1\}\), para
         toda \(n\).
       </p>
-      <p>
-        En \(\{0,1\}^{\mathbb{N}}\) define
+      <p>En \(\{0,1\}^{\mathbb{N}}\) considera la función  $d\colon \{0,1\}^{\mathbb{N}} \times \{0,1\}^{\mathbb{N}} \to \mathbb{R}$ definida  como:
         \[
-        d(a,b)=\sum_{n=1}^\infty \frac{1}{2^n}|a_n-b_n|
+        d(a,b):=\sum_{n=1}^\infty \frac{1}{2^n}|a_n-b_n|
         \]
         Prueba que \(d\) es una métrica en \(\{0,1\}^{\mathbb{N}}\).
       </p>  
     </div>
 
     <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
-      <p>
-        Por \(C([a,b])\) denotamos al conjunto de funciones continuas definidas en 
-        el intervalo \([a,b]\) y con valores en $\mathbb{R}$. En \(C([a,b])\) se definen
-        las funciones:
+      <p>Se denota por \(C([a,b])\) al conjunto de funciones continuas definidas en 
+        el intervalo \([a,b]\) con valores en $\mathbb{R}$. En \(C([a,b])\) se definen
+        las funciones $d_{1}, d_{\infty}: C([a,b]) \times C([a,b]) \to \mathbb{R}$ como: 
         <ul>
-        <li>$d_\infty(f,g)=\displaystyle{\max_{t\in [a,b]} }\{ |f(t)-g(t)| \}$,</li><br>
-        <li>$d_1(f,g)=\displaystyle{\int_a^b |f(t)-g(t)|dt}$.</li>
+        <li>$d_\infty(f,g) :=\displaystyle{\max\{ |f(t)-g(t)| \colon t\in [a,b] \}}$,</li><br>
+        <li>$d_1(f,g) :=\displaystyle{\int_a^b |f(t)-g(t)|dt}$.</li>
         </ul>
         Prueba que \(d_\infty\) y \(d_1\) son métricas en \(C([a,b])\).
       </p>
@@ -165,31 +204,37 @@
 
     <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
       <p>
-        Supongamos que \((A,d_{A})\), \((B,d_{B})\) son dos espacios métrios.
+        Supongamos que \((A,d_{A})\), \((B,d_{B})\) son dos espacios métricos.
         Define
         <ul>
-          <li>$d((a_1,b_1),(a_2,b_2))= d_A(a_1,a_2)+d_B(b_1,b_2)$,</li><br>
-          <li>$\rho((a_1,b_1),(a_2,b_2)) = \max\{d_A(a_1,a_2), d_B(b_1,b_2) \}$</li> <br>
-          <li>$\sigma((a_1,b_1),(a_2,b_2)) = \sqrt{d_A(a_1,a_2)^2+d_B(b_1,b_2)^2}$</li>
+          <li>$d((a_1,b_1),(a_2,b_2)) := d_A(a_1,a_2)+d_B(b_1,b_2)$,</li><br>
+          <li>$\rho((a_1,b_1),(a_2,b_2)) := \max\{d_A(a_1,a_2), d_B(b_1,b_2) \}$</li> <br>
+          <li>$\sigma((a_1,b_1),(a_2,b_2)) := \sqrt{d_A(a_1,a_2)^2+d_B(b_1,b_2)^2}$</li>
         </ul>
         Prueba que \(d\), \(\rho\) y \(\sigma\) son métricas  en \(A\times B\).
       </p>
     </div>
 
+
+    <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
+      <p>Sea $f\colon \mathbb{R} \to \mathbb{R}$ una función inyectiva. Prueba que la función $d \colon \mathbb{R} \times \mathbb{R} \to \mathbb{R}$
+        definida como: 
+        $$d(x,y) \colon= |f(x) - f(y)|$$
+        es una métrica en $\mathbb{R}$
+      </p>          
+        
+    </div>
+
     <div class="nota-box"><h1 class="number-title-ejercicio" id="Ejer:MetricasGeneradasPorFunciones"> Ejercicio</h1>
       <p>
-        Sea \(f:[0,\infty)\to [0,\infty)\) una función que satisface
+        Sea \(f:[0,\infty)\to [0,\infty)\) una función que satisface las siguientes propiedades:
         <ul>
-          <li>
-            \(f\) es monótona creciente.
-          </li>
-          <li> \(f(0)=0\), </li>
-          <li> \(f(x)>0\) para \(x>0\),</li>
+          <li>\(f\) es monótona creciente.</li><br>
+          <li> \(f(0)=0\), </li><br>
+          <li> \(f(x)>0\) para \(x>0\),</li><br>
           <li> \(f(x+y)\leq f(x)+f(y)\), para todos \(x,y\). </li>
         </ul>
-
       </p>
-
       <p>
         Sea \((A,d)\) un espacio métrico. Prueba que \(\rho(x,y):= f(d(x,y)) \)
         es una métrica en \(A\).
@@ -206,7 +251,7 @@
         </ul>
         Prueba que \(\rho\) y \(\sigma\) son métricas en $A$.
       </p>
-      <p><b>Sugerencia:</b> Utiliza el <a  href="#Ejer:MetricasGeneradasPorFunciones">Ejercicio anterior</a> .</p>
+      <p><b>Sugerencia:</b> Utiliza el <a  href="#Ejer:MetricasGeneradasPorFunciones">Ejercicio 2.4</a> .</p>
       </p>
     </div>
 
@@ -267,22 +312,32 @@
     </div>
 
     <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
-      <p>Prueba que la unión finita de subconjuntos acotados sigue siendo
-        acotada.
+      <p>Sea $(A,d)$ un espacio métrico. Prueba que la unión finita de subconjuntos acotados en  $(A,d)$ sigue siendo
+        un conjunto acotado en $(A,d)$.
       </p>          
         
     </div>
 
     <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
-      <p>Sea $(A,d)$ un espacio métrico y $F \subseteq A$. Prueba que \(F\) está acotado si y sólo si \(\operatorname{diam}(F)<\infty\).
+      <p>Sea $(A,d)$ un espacio métrico y $F \subseteq A$. Prueba que \(F\) es un conjunto acotado si y sólo si 
+        \(\operatorname{diam}(F)<\infty\).
       </p>          
-        
     </div>
+
+    <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
+      <p>Sea $(A,d)$ un espacio métrico$x_{0} \in A$ y $r >0$ y $F \subseteq A$. Es claro que $\mathrm{diam}(B_{r}(x_{0})) \leq 2r$.
+        Prueba que en general la igualdad no siempre se satisface.  
+
+      </p>          
+    </div>
+
 
     <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
       <p>Sea \(C(\mathbb{R})\), el espacio de las funciones continuas en 
-        \(\mathbb{R}\) con valores en \(\mathbb{R}\), dado cualquier compacto \(K\subseteq \mathbb{R}\) la función 
+        \(\mathbb{R}\) con valores en \(\mathbb{R}\) y  \(K\subseteq \mathbb{R}\) un subconjunto compacto. Prueba que la función 
         $\rho_{K}\colon C(\mathbb{R}) \times C(\mathbb{R}) \to \mathbb{R}$ definida como:
+      </p>
+      <p>
         \[
         \rho_K(f,g):=\max_{x\in K}\{|f(x)-g(x)| \}
         \]
@@ -292,28 +347,37 @@
     </div>
 
     <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
-      <p>
+      <p>Sean $B,C$ conjuntos no vacios en un espacio métrico $(A,d)$. Prueba que
+        $$d(B,C) = \inf\{ d(x,C) \colon x \in B \} = \inf\{ d(B,y) \colon y \in C \}$$
       </p>          
         
     </div>
 
     <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
-      <p>
+      <p>Sea $(A,d)$ un espacio métrico,  $x \in A$ y $r >0$. Se define la <i>Bola abierta con centro en $x$ y radio $r$</i> como:
+        $$B_{r}(x) \colon \{ a \in A \colon d(x,a) < r \}$$
+        Cuando $r=1$, $B_{r}(x)$ es llamada la <i>bola unitaria</i>. 
+      </p>          
+      <p> Realiza un bosquejo de las bolas unitarias centradas en $(0,0)$ en $\mathbb{R}^{2}$ con respecto a  las métricas
+        <ol>
+          <li>$d((x_1,y_1),(x_2,y_2)) := |x_{1} - y_{1}| + |x_{2} - y_{2}|$,</li><br>
+          <li>$\rho((x_1,y_1),(x_2,y_2)) := \max\{|x_{1} - y_{1}|, |x_{2} - y_{2}| \}$</li> <br>
+          <li>$\sigma((x_1,y_1),(x_2,y_2)) := \sqrt{|x_{1} - y_{1}|+ |x_{2} - y_{2}|}$</li>
+        </ol>
+      </p>
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
+      <p>Describe la bola abierta con centro en $x_{0}$  y radio $r>0$ en un espacio métrico con la métrica discreta.</p>
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
+      <p>Sea $(A,d)$ un espacio métrico,  $x_{0} \in A$ y $r >0$. Prueba que para todo $x \in B_{r}(x_{0})$, existe 
+        $s >0$ tal que $B_{s}(x) \subseteq  B_{r}(x_{0})$.
       </p>          
         
     </div>
 
-    <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
-      <p>
-      </p>          
-        
-    </div>
-
-    <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
-      <p>
-      </p>          
-        
-    </div>
 
     <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
       <p>
