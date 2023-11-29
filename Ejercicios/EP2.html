@@ -381,15 +381,156 @@
 
     <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
       <p>
+        Recordemos que en un mismo espacio vectorial puede
+        admitir distintas normas. Este ejercicio presenta la relación entre tres
+        normas
+        distintas en \(\mathbb{R}^n\).
+      </p>
+      <p>
+        <p>
+          Para \(x=(x_1,\dots, x_n)\in \mathbb{R}^n\) se definen:
+          $$
+          \|x\|_1 := \sum_{i=1}^n|x_i|, \hspace{1.5cm}\|x\|_2 := \left(\sum_{i=1}^2x_i^2\right)^{1/2},\hspace{1.5cm} \|x\|_\infty := \displaystyle{\max \{|x_i| \colon 1\leq i \leq n\}}.
+          $$
+          
+      </p>
+
+      <p> Prueba que se satisfacen las siguientes desigualdades:
+        <ol>
+          <li>$\|x\|_\infty \leq \|x\|_2 \leq \|x\|_1,$</li><br>
+          <li>$\|x\|_1 \leq n \|x\|_\infty,$</li><br>
+          <li>$\|x\|_1\leq \sqrt{n}\|x\|_2$.</li>
+        </ol>
       </p>          
         
     </div>
 
     <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
       <p>
+        Por \(\ell_\infty\) denotamos al conjunto de sucesiones de reales
+        que están acotadas. Es decir
+        \[
+        \ell_\infty=\left\{
+          (x_i)_{i=1}^\infty \in \mathbb{R}^{\mathbb{N}} \left|
+          \sup_{i\in \mathbb{N}} \{ |x_i| \} < \infty
+          \right.
+          \right\}
+        \]
+      </p>
+      <p>
+        Dado \(x\in \ell_\infty\) definimos
+        \[
+        \|x\|_\infty:= \sup_{i\in \mathbb{N}}\{ |x_i|\}
+        \]
+      </p>
+      <p>
+        Prueba que \((\ell_\infty, \| \cdot\|_\infty)\) es un espacio vectorial
+        normado.
+      </p>  
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
+      <p>
+        Por \(\ell_1\) denotamos al conjunto de sucesiones de reales que
+        son absolutamente sumables. Es decir
+        \[
+        \ell_1=\left\{
+          (x_i)_{i=1}^\infty \in \mathbb{R}^{\mathbb{N}} \left|
+          \sum_{i=1}^\infty |x_i| < \infty
+          \right.
+          \right\}
+        \]
+      </p>
+      <p>
+        Dado \(x\in \ell_1\) definimos
+        \[
+        \|x\|_1:=\sum_{i=1}^\infty |x_i|
+        \]
+      </p>
+      <p>
+        Prueba que \((\ell_1, \| \cdot\|_1)\) es un espacio vectorial
+        normado.
+      </p>
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
+      <p>
+        Por \(\ell_2\) denotamos al conjunto de sucesiones de reales
+        cuadrado sumables. Es decir
+        \[
+        \ell_2=\left\{(x_i)_{i=1}^\infty \in \mathbb{R}^{\mathbb{N}}
+        \left|  \sum_{i=1}^\infty x_i^2< \infty \right. \right\}
+        \]
+      </p>
+      <p>
+        Dado \(x=(x_i)_{i=1}^\infty \in \ell_2 \) definimos
+        \[
+        \|x \|_2:=\left( \sum_{i=1}^\infty x_i^2\right)^{1/2}
+        \]
+      </p>Prueba que \((\ell_2,\|\cdot\|_2)\) es un espacio
+      vectorial normado.
+      <p>
       </p>          
         
     </div>
+
+    <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
+      <p>
+        <ol>
+          <li>Prueba que
+            \(\ell_2 \subseteq \ell_\infty\).
+          </li><br>
+          <li>Prueba que para todo \(x\in \ell_2\)
+          \[
+          \|x\|_\infty \leq \|x\|_2
+          \]
+          </li><br>
+          <li>Da un ejemplo que muestre que la contención
+          \(\ell_2 \subseteq \ell_\infty\) es propia.
+          </li>
+        </ol>
+      </p>          
+        
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
+      <p>
+        <ol>
+          <li>
+          Prueba que si \(x\in \ell_1\) entonces
+          \[
+          \|x\|_2 \leq \|x\|_1
+          \]
+          Concluye que \(\ell_1 \subseteq \ell_2 \).
+          </li><br>
+          <li>Muestra con un ejemplo que la contención
+            \(\ell_1 \subseteq \ell_2\) es propia. 
+            <p><b>Sugerencia:</b> series \(p\).</p>  
+          </li>
+        </ol>
+
+      </p>     
+         
+        
+    </div>
+
+    
+
+    <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
+      <p>
+      </p>          
+        
+    </div>
+
+    
+
+    <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
+      <p>
+      </p>          
+        
+    </div>
+
+    
 
 
 
