@@ -193,10 +193,10 @@
       <p>Se denota por \(C([a,b])\) al conjunto de funciones continuas definidas en 
         el intervalo \([a,b]\) con valores en $\mathbb{R}$. En \(C([a,b])\) se definen
         las funciones $d_{1}, d_{\infty}: C([a,b]) \times C([a,b]) \to \mathbb{R}$ como: 
-        <ul>
+        <ol>
         <li>$d_\infty(f,g) :=\displaystyle{\max\{ |f(t)-g(t)| \colon t\in [a,b] \}}$,</li><br>
         <li>$d_1(f,g) :=\displaystyle{\int_a^b |f(t)-g(t)|dt}$.</li>
-        </ul>
+        </ol>
         Prueba que \(d_\infty\) y \(d_1\) son métricas en \(C([a,b])\).
       </p>
    
@@ -206,11 +206,11 @@
       <p>
         Supongamos que \((A,d_{A})\), \((B,d_{B})\) son dos espacios métricos.
         Define
-        <ul>
+        <ol>
           <li>$d((a_1,b_1),(a_2,b_2)) := d_A(a_1,a_2)+d_B(b_1,b_2)$,</li><br>
           <li>$\rho((a_1,b_1),(a_2,b_2)) := \max\{d_A(a_1,a_2), d_B(b_1,b_2) \}$</li> <br>
           <li>$\sigma((a_1,b_1),(a_2,b_2)) := \sqrt{d_A(a_1,a_2)^2+d_B(b_1,b_2)^2}$</li>
-        </ul>
+        </ol>
         Prueba que \(d\), \(\rho\) y \(\sigma\) son métricas  en \(A\times B\).
       </p>
     </div>
@@ -390,7 +390,7 @@
         <p>
           Para \(x=(x_1,\dots, x_n)\in \mathbb{R}^n\) se definen:
           $$
-          \|x\|_1 := \sum_{i=1}^n|x_i|, \hspace{1.5cm}\|x\|_2 := \left(\sum_{i=1}^2x_i^2\right)^{1/2},\hspace{1.5cm} \|x\|_\infty := \displaystyle{\max \{|x_i| \colon 1\leq i \leq n\}}.
+          \|x\|_1 := \sum_{i=1}^n|x_i|, \hspace{1.5cm}\|x\|_2 := \left(\sum_{i=1}^n x_i^2\right)^{1/2},\hspace{1.5cm} \|x\|_\infty := \displaystyle{\max \{|x_i| \colon 1\leq i \leq n\}}.
           $$
           
       </p>
@@ -423,10 +423,14 @@
         \|x\|_\infty:= \sup_{i\in \mathbb{N}}\{ |x_i|\}
         \]
       </p>
-      <p>
-        Prueba que \((\ell_\infty, \| \cdot\|_\infty)\) es un espacio vectorial
+      <ol>
+        <li>
+          Prueba que $\ell_{\infty}$ es un espacio vectorial sobre $\mathbb{R}$.
+        </li><br>
+        <li>Prueba que \((\ell_\infty, \| \cdot\|_\infty)\) es un espacio vectorial
         normado.
-      </p>  
+        </li>
+      </ol>  
     </div>
 
     <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
@@ -447,10 +451,14 @@
         \|x\|_1:=\sum_{i=1}^\infty |x_i|
         \]
       </p>
-      <p>
-        Prueba que \((\ell_1, \| \cdot\|_1)\) es un espacio vectorial
+      <ol>
+        <li>
+          Prueba que $\ell_{1}$ es un espacio vectorial sobre $\mathbb{R}$.
+        </li><br>
+        <li>Prueba que \((\ell_1, \| \cdot\|_1)\) es un espacio vectorial
         normado.
-      </p>
+        </li>
+      </ol>  
     </div>
 
     <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
@@ -467,9 +475,14 @@
         \[
         \|x \|_2:=\left( \sum_{i=1}^\infty x_i^2\right)^{1/2}
         \]
-      </p>Prueba que \((\ell_2,\|\cdot\|_2)\) es un espacio
-      vectorial normado.
-      <p>
+        <ol>
+          <li>
+            Prueba que $\ell_{2}$ es un espacio vectorial sobre $\mathbb{R}$.
+          </li><br>
+          <li>Prueba que \((\ell_2, \| \cdot\|_2)\) es un espacio vectorial
+          normado.
+          </li>
+        </ol>  
       </p>          
         
     </div>
