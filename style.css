@@ -469,6 +469,17 @@ h1.number-title-ejercicio::after{
   content: " " counter(semanaCounter)"."counter(sectionCounter) ".";
 }
 
+h1.number-title-definicion{
+  font-size: 185%;
+  margin-top: -1.75%;
+  padding: 0.25%;
+  text-align: center;
+  /* font-weight: 800; */
+  /* font-family: "Muli"; */
+  font-family: 'Hina Mincho', serif;
+  /* font-size: 33px; */
+  color: rgb(3, 89, 165); 
+}
 
 
 /*/////////////// for body boxes  /////////////////////*/
