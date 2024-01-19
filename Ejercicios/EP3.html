@@ -700,18 +700,18 @@
         <ol>
           <li>
             Sea \(\{F_i\}_{i\in I}\) una colección arbitraria de conjuntos
-            cerrados. Prueba que la intersección \(\cap_{i\in I}F_i\), es
+            cerrados. Prueba que la intersección \( \displaystyle{\bigcap_{i\in I}}F_i\), es
             cerrada.
           </li>
           <li>
             Sea \(F_1,\dots, F_n\) una colección finita de conjuntos
-            cerrados. Prueba que la union \(\cup_{i=1}^n F_i\)
+            cerrados. Prueba que la union \(\displaystyle{\bigcup_{i=1}^n F_i }\)
             es cerrada.
-          </li>
+          </li><br>
           <li>
             Da un ejemplo de un espacio métrico y una colección numerable
             de conjuntos cerrados, \(\{F_i\}_{i\in \mathbb{N}}\), tal que
-            su union \(\cup_{i\in \mathbb{N}} F_i\) no es cerrada.
+            su union \(\displaystyle{\bigcup_{i\in \mathbb{N}}} F_i\) no es cerrada.
           </li>
         </ol>
       </p>
@@ -724,11 +724,11 @@
           <li>
             Prueba que  \(\mathbb{Q}\) no es ni abierto ni cerrado en
             \(\mathbb{R}\).
-          </li>
+          </li><br>
           <li>
             ¿Existe un conjunto abierto en \(\mathbb{R}\), no vacío, contenido
             en \(\mathbb{Q}\)?
-          </li>
+          </li><br>
           <li>
             Da un ejemplo de un subconjunto de \(\mathbb{R}\), cerrado
             y que consiste sólo de números irracionales.
@@ -753,7 +753,7 @@
         <ol>
           <li> Prueba que todo intervalo abierto de \(\mathbb{R}\)
            es la unión numerable de intervalos cerrados.
-          </li>
+          </li><br>
           <li> Prueba que todo intervalo cerrado de \(\mathbb{R}\)
             es la intersección numerable de intervalos abiertos.
           </li>
@@ -804,7 +804,7 @@
 
     <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1> 
       <p>
-        Prueba que \(x\in \overline{A}\) si y sólo si
+        Prueba que \(x\in \overline{A} \) si y sólo si
         existe una sucesión de elementos de \(A\),
         \((a_n)_{n\in \mathbb{N}} \subset A\), tal que
         \(\lim_na_n=x\).
@@ -816,74 +816,59 @@
         Prueba las siguientes indentidades.
       </p>
       <ol>
-        <li> \(\inte([a,b) )= (a,b)\), \(\cer([a,b))=[a,b]\). </li>
-        <li> \(\inte(\mathbb{Q})=\emptyset\), \(\cer(\mathbb{Q})=\mathbb{R}\) .</li>
-        <li> \(\inte(\Delta)=\emptyset\), \(\cer(\Delta)=\Delta\),
+        <li> \(\mathrm{Int}([a,b) )= (a,b) \), \( \overline{[a,b)}=[a,b] \). </li> <br>
+        <li> \(\mathrm{Int}(\mathbb{Q})=\emptyset\), \(\overline{\mathbb{Q}}=\mathbb{R}\) .</li> <br>
+        <li> \(\mathrm{Int}(\Delta)=\emptyset\), \(\overline{\Delta}=\Delta\),
           donde \(\Delta\) es el conjunto de cantor.</li>
       </ol>
     </div>
 
     <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1> 
       <p>
-        Sea \((X,d)\) un espacio métrico y \(A,B \subseteq X\).
+        Sea \((A,d)\) un espacio métrico y \(B,C \subseteq A\).
       </p>
       <ol>
         <li>
-          Prueba \(\cer(A\cup B)=\cer(A)\cup \cer(B)\).
-        </li>
+          Prueba \(\overline{A\cup B}=\overline{A}\cup \overline{B}\).
+        </li><br>
         <li>
-          Prueba \(\cer(A \cap B)\subseteq \cer(A)\cap \cer(B) \)
+          Prueba \(\overline{A \cap B }\subseteq \overline{A} \cap \overline{B} \)
           y da un ejemplo que muestre que la contención puede ser propia.
-        </li>
+        </li><br>
         <li>
-          Prueba \(\inte(A\cap B)= \inte(A)\cap \inte(B)\).
-        </li>
+          Prueba \(\mathrm{Int}(A\cap B)= \mathrm{Int}(A)\cap \mathrm{Int}(B)\).
+        </li><br>
         <li>
-          Prueba \(\inte(A)\cup \inte(B) \subseteq \inte(A\cup B) \) y
+          Prueba \(\mathrm{Int}(A)\cup \mathrm{Int}(B) \subseteq \mathrm{Int}(A\cup B) \) y
           da un ejemplo que muestre que la contención puede ser propia.
         </li>
     </div>
 
     <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1> 
       <p>
-        Sea \((X,d)\) un espacio métrico y \(A\subseteq X\).
-      </p>
-      <p>
-        Un punto \(x\in X\) se llama punto de acumulación de \(A\)
-        (o punto límite de \(A\)) si para todo \(r>0\) exite
-        \(a\in A\), \(a\ne x\) tal que \(d(x,a)< r\).
-      </p>
-      <p>
-        Si \(x\in X\) es un punto límite de \(A\) prueba que para todo 
-       abierto \(U\) tal que \(x\in U\) contiene una cantidad
-        infinita de elementos de \(A\).
+        Sea \((A,d)\) un espacio métrico y \(E\subseteq A\). Si \(x\in A\) es un punto límite de \(E\) prueba que para todo 
+       abierto \(U\) tal que \(x\in E\) contiene una cantidad
+        infinita de elementos de \(E\).
       </p>
     </div>
 
     <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1> 
       <p>
-        Sea \((X,d)\) un espacio métrico, \(A\subseteq X\) y \(x\in X\).
-      </p>
-      <p>
-        Prueba que \(x\) es un punto límite de \(A\) si y  sólo si
-        existe una sucesión \((a_n)_{n\in \mathbb{N}} \subset A\)
+        Sea \((A,d)\) un espacio métrico, \(E\subseteq A\) y \(x\in A\). Prueba que 
+        \(x\) es un punto límite de \(E\) si y  sólo si
+        existe una sucesión \((a_n)_{n\in \mathbb{N}} \subset E\)
         tal que \(\lim_{n\to \infty}a_n=x\) y \(a_n\neq x\), para toda \(n\).
       </p>
     </div>
 
     <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1> 
-      <p>
-        Sea \((X,d)\) un espacio métrico y \(A\subseteq X\). Por
-        \(A'\) denotamos al conjunto de todolos puntos de acumulación de
-        \(A\).
-      </p>
       <ol>
         <li>
           Prueba que \(A'\) es un conjunto cerrado.
-        </li>
+        </li><br>
         <li>
-          Prueba que \(\cer(A)=A\cup A'\).
-        </li>
+          Prueba que \(\overline{A}=A\cup A'\).
+        </li><br>
         <li>
           Prueba que \(A\) es cerrado si y sólo si \(A'\subseteq A\).
         </li>
@@ -892,21 +877,11 @@
     </div>
 
     <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1> 
-      <p>
-        Sea \((X,d)\) un espacio métrico y \(A \subseteq X\). Un punto
-        \(x\in X\) se llama punto frontera de \(A\) si, para todo
-        \(r>0\) se cumple
-        \[
-        B_r(x)\cap A \ne \emptyset \quad  \textrm{y} \quad B_r(x)\cap A^c \ne \emptyset.
-        \]
-        Al conjunto de puntos frontera lo denotamos por \(\partial(A)\).
-      </p>
-      <p>
-        Prueba las siguientes identidades.
+      <p> Sea \((A,d)\) un espacio métrico y \(E \subseteq A\). Prueba las siguientes identidades.
         <ol>
-          <li> \(\partial(A)=\partial(A^c)\).</li>
-          <li> \(\cer(A)=\inte(A)\cup \partial(A)\).</li>
-          <li> \(X= \inte(A)\cup \partial(A)\cup \inte(A^c)\).</li>
+          <li> \(\partial(E)=\partial(E^c)\).</li><br>
+          <li> \(\overline{E}=\mathrm{Int}(E)\cup \partial(E)\).</li><br>
+          <li> \(X= \mathrm{Int}(E)\cup \partial(E)\cup \mathrm{Int}(E^c)\).</li>
         </ol>
       </p>
     </div>
@@ -928,10 +903,7 @@
     <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1> 
       <p>
         Sea \((V,\|\cdot\|)\) un espacio vectorial normado,
-        \(v_0\in V\), \(r>0\).
-      </p>
-      <p>
-        Prueba
+        \(v_0\in V\), \(r>0\). Prueba
         \[
         \overline{B_r(v_0)}=\{ v\in V: \| v-v_0\| \leq r\}.
         \]
@@ -944,27 +916,27 @@
 
     <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1> 
       <p>
-        Sea \((X,d)\) un espacio métrico y \(A\subseteq X\).
-        Prueba que \(\operatorname{diam}(A)=\operatorname{diam}(\overline{A})\).
+        Sea \((A,d)\) un espacio métrico y \(E\subseteq A\).
+        Prueba que \(\operatorname{diam}(E)=\operatorname{diam}(\overline{E})\).
       </p>
       
     </div>
 
     <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
-      <p>
-        Prueba que \(x\in \overline{A}\) si y sólo si \(d(x,A)=0\).
+      <p>Sea \((A,d)\) un espacio métrico y \(E\subseteq A\). Prueba que 
+        \(x\in \overline{E}\) si y sólo si \(d(x,E)=0\).
       </p>
     </div>
 
 
 
     <div class="nota-box"><h1 class="number-title-ejercicio"> Ejercicio</h1>
-      <p>
+      <!-- <p>
         Sea \((X,d_X)\) un espacio métrico. Decimos que un subconjunto
         \( D \subseteq X\) se llama denso  en \(X\) si \(\overline{D}=X\). Por
         ejemplo \(\mathbb{Q}\) es denso en \(\mathbb{R}\).
-      </p>
-      <p>
+      </p> -->
+      <p>Sea \((A,d)\) un espacio métrico y \(D\subseteq A\). 
         Prueba que las siguientes condiciones son equivalentes.
       </p>
       <ol>
